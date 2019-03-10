@@ -13,22 +13,22 @@ abstract class Shape {
 
 class Circle extends Shape {
     public boolean flag = false;
-    public String toString() { return "Circle; flag = " + flag; }
+    public String toString() { return "Circle; flag = " + (flag ? "marked":"unmarked"); }
 }
 
 class Square extends Shape {
     public boolean flag = false;
-    public String toString() { return "Square; flag = " + flag;}
+    public String toString() { return "Square; flag = " + (flag ? "marked" : "unmarked");}
 }
 
 class Triangle extends Shape {
     public boolean flag = false;
-    public String toString() {return "triangle; flag = " + flag;}
+    public String toString() {return "triangle; flag = " + (flag ? "marked" :"unmarked");}
 }
 
 class Rhomboid extends Shape {
     public boolean flag = false;
-    public String toString() { return "Rhomboid; flag = " + flag;}
+    public String toString() { return "Rhomboid; flag = " + (flag ? "marked" : "unmarked");}
 }
 public class Shapes {
 
@@ -52,6 +52,25 @@ public class Shapes {
             rotate(shape);
         }
 
+        System.out.println("Mark Circle shapes");
+
+        for(Shape shape: shapes1) {
+            setCircleFlag(shape);
+            System.out.println(shape);
+        }
+
+        System.out.println("Reset flag");
+
+        for(Shape shape : shapes1) {
+            resetFlag(shape);
+        }
+
+        System.out.println("Mark Square shapes");
+
+        for(Shape shape : shapes1) {
+            setSquareFlag(shape);
+            System.out.println(shape);
+        }
         
 
     }
@@ -62,5 +81,26 @@ public class Shapes {
             return;
         }
         System.out.println(shape + " rotate");
+    }
+
+    static void setCircleFlag(Shape shape) {
+        if(shape instanceof Circle) {
+            ((Circle)shape).flag = true;
+        }
+    }
+
+    static void setSquareFlag(Shape shape) {
+        if(shape instanceof Square) {
+            ((Square)shape).flag = true;
+        }
+    }
+
+    static void resetFlag(Shape shape) {
+        if(shape instanceof Circle) {
+            ((Circle)shape).flag = false;
+        }
+        if(shape instanceof Square) {
+            ((Square)shape).flag = false;
+        }
     }
 }
