@@ -29,6 +29,18 @@ public class PetCount {
             if(pet instanceof Cat) {
                 counter.count("Cat");
             }
+            if(pet instanceof  EgyptianMau) {
+                counter.count("EgyptianMau");
+            }
+            if(pet instanceof Mutt) {
+                counter.count("Mutt");
+            }
+            if(pet instanceof Mruk) {
+                counter.count("Mruk");
+            }
+            if(pet instanceof Zin) {
+                counter.count("Zin");
+            }
         }
 
         System.out.println();

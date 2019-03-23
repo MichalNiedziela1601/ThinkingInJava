@@ -3,7 +3,7 @@ package typeinfo;
 import java.util.ArrayList;
 import java.util.List;
 
-class CountedInteger {
+class CountedIntegerss {
     private static long counter;
     private final long id = counter++;
 
