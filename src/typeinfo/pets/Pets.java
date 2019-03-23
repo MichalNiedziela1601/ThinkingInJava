@@ -1,7 +1,5 @@
 package typeinfo.pets;
 
-import typeinfo.LiteralPerCreator;
-
 import java.util.ArrayList;
 
 public class Pets {

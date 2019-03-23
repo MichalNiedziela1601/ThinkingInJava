@@ -11,6 +11,7 @@ public class ForNameCreator extends PetCreator {
             "typeinfo.pets.EgyptianMau",
             "typeinfo.pets.Mutt",
             "typeinfo.pets.Zin",
+            "typeinfo.pets.Gerbil"
     };
     @SuppressWarnings("unchecked")
     private static void loader() {

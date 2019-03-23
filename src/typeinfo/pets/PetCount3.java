@@ -1,7 +1,6 @@
 package typeinfo.pets;
 
 import net.mindview.util.MapData;
-import typeinfo.LiteralPerCreator;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package typeinfo;
+package typeinfo.pets;
 
 import typeinfo.pets.*;
 
@@ -10,7 +10,7 @@ public class LiteralPerCreator extends PetCreator {
 
     @SuppressWarnings("unchecked")
     public static final List<Class<? extends Pet>> allTypes = Collections.unmodifiableList(Arrays.<Class<? extends Pet>>asList(
-            Pet.class, Dog.class, Cat.class, Mutt.class, EgyptianMau.class, Mruk.class, Zin.class
+            Pet.class, Dog.class, Cat.class, Mutt.class, EgyptianMau.class, Mruk.class, Zin.class, Gerbil.class
     ));
 
     private static final List<Class<? extends Pet>> types = allTypes.subList(allTypes.indexOf(Mutt.class),allTypes.size());
