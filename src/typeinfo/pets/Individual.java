@@ -10,4 +10,6 @@ public class Individual {
 
     public Individual() {
     }
+
+    public String getName() { return name; }
 }
