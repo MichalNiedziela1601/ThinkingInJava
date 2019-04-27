@@ -12,4 +12,5 @@ public class Individual {
     }
 
     public String getName() { return name; }
+    public String toString() { return getClass().getSimpleName(); }
 }
